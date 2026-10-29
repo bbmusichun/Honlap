@@ -1,0 +1,4 @@
+[build]
+  publish = "voicestudio-web"
+
+# This is a static PWA; no build command is required.
