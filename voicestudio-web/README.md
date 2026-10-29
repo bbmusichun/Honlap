@@ -10,7 +10,13 @@ Upstream: https://github.com/debpalash/VoiceStudio (AGPL-3.0). This is an indepe
 
 ## Deploy
 
-The GitHub Pages workflow in the parent repo publishes this folder to `/Honlap/voicestudio-web/`. If Pages is not enabled, open repository Settings → Pages and choose **GitHub Actions** as the source. Then rerun the workflow in Actions.
+### Netlify (recommended for a simple static host)
+
+Import the `bbmusichun/Honlap` repository into Netlify. Keep the repository root as the base directory and leave the build command empty. The root `netlify.toml` sets the publish directory to `voicestudio-web`, so the app opens at the site's root URL. Do not upload the parent repository's files from an unrelated project.
+
+### GitHub Pages
+
+The workflow publishes this folder to `/Honlap/voicestudio-web/`. In repository Settings → Pages, choose **GitHub Actions** as the source once, then rerun the workflow in Actions. GitHub's workflow token cannot create/enable Pages for a repository when the required repository administration permission is unavailable.
 
 ## Connect
 
